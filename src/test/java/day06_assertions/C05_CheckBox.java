@@ -38,13 +38,14 @@ public class C05_CheckBox {
     public void checkBox() throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/checkboxes");
 
-        WebElement cb1= driver.findElement(By.xpath("//*[text()=' checkbox 1']"));
+        WebElement cb1= driver.findElement(By.xpath("(//input[@type='checkbox'])[1]"));
         WebElement cb2 =driver.findElement(By.xpath("(//input[@type='checkbox'])[2]"));
 
         if (!cb1.isSelected()){
             cb1.click();
         }
-        Assert.assertFalse(cb1.isSelected());
+
+        Assert.assertTrue(cb1.isSelected());
 
         if (!cb2.isSelected()){
             cb2.click();
