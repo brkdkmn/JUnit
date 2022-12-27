@@ -53,7 +53,7 @@ public class S3_YoutubeAssertions {
     public void wrongTitleTest(){
         String expected = "youtube";
         String actualTitle= driver.getTitle();
-        Assert.assertFalse(actualTitle.contains(expected));
+       Assert.assertNotEquals(expected,actualTitle);
     }
 
 }
