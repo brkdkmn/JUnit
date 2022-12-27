@@ -74,6 +74,7 @@ public class C01_HandleDropdownMenu {
             int expectedOptionSayisi=28;
             Assert.assertEquals(expectedOptionSayisi,actualOptionSayisi);
             Thread.sleep(5000);
+
         }
     }
 
