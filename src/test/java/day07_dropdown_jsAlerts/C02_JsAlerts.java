@@ -13,6 +13,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class C02_JsAlerts {
+         /*
+      Otomasyon sirasinda karsimiza iki tur alert cikar
+      1- HTML alerts :
+         diger HTML elementleri gibi locate edilebilir
+         otomasyonda kullanilabilir
+      2- javaScript alerts
+         HTML kodlarla locate edilemez
+         dolayisla da click, getText gibi method'lar calismaz
+       javaScript alert'ler icin tek yontemimiz vardir
+       switchTo( ) kullanarak allert'e gecmekl
+       ve alert'un izin verdigi islevleri yapmak
+     */
 
 
        //  Gerekli ayarlamaları yapıp

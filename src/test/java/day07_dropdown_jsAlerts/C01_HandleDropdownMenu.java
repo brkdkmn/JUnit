@@ -49,19 +49,23 @@ public class C01_HandleDropdownMenu {
             // 3- select objesini kullanarak istedigimiz method/method'lari calistirin
             // select.selectByValue("search-alias=stripbooks-intl-ship");
             // select.selectByIndex(5);
+
             select.selectByVisibleText("Books");
+            // arama kutusuna java yazdirip aramayi yapin
             WebElement aramaKutusu= driver.findElement(By.id("twotabsearchtextbox"));
             aramaKutusu.sendKeys("Java"+ Keys.ENTER);
+            // title'in java icerdigini test edin
             String expectedKelime="Java";
             String actualTitle= driver.getTitle();
             Assert.assertTrue(actualTitle.contains(expectedKelime));
-            // dropdown menuden Books seceneginin secildigini test edin
+
         /*
            Locate ettigimiz elementi bulamazsa NoSuchElementException
            sayfa yenilendigi icin var olan bir elementi kullanamazsa
            StaleElementException verir
            bu durumda locate ve secme islemini yeniden yaparsak kodumuz calisir
          */
+            // dropdown menuden Books seceneginin secildigini test edin
             dropdownWebElementi= driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
             select = new Select(dropdownWebElementi);
             select.selectByVisibleText("Books");
