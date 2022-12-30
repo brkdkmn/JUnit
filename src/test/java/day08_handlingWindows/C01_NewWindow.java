@@ -19,7 +19,7 @@ public class C01_NewWindow {
        Bu durumda driver'imiz otomatik olarak yeni sayfaya gecmis olur
 
        Testin ilerleyen asamalarinda yeniden eski sayfalara donus gorevi varsa
-       osayfada iken o sayfanin window handle degeri alinip kaydedilir
+       o sayfada iken o sayfanin window handle degeri alinip kaydedilir
        ve o sayfaya gecmek istendiginde driver.switchTo().window(istenensayfaninwindowhandledegeri) yazilarak
        o sayfaya gecis yapilir
      */

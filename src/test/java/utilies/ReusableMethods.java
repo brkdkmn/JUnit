@@ -7,6 +7,6 @@ public class ReusableMethods {
             Thread.sleep(saniye*1000);
         } catch (InterruptedException e) {
 
-        }
+       }
     }
 }
