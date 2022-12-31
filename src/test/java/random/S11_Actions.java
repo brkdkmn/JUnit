@@ -5,8 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utilies.ReusableMethods;
 import utilies.TestBase;
+
+import java.time.Duration;
 
 public class S11_Actions extends TestBase {
     @Test
@@ -32,7 +36,7 @@ public class S11_Actions extends TestBase {
         ReusableMethods.bekle(2);
 
         //7-“Click and hold" kutusunda cikan yaziyi yazdirin
-         System.out.println(clickandHold.getText());
+        System.out.println(clickandHold.getText());
         ReusableMethods.bekle(2);
         //8- “Double click me" butonunu cift tiklayin
         WebElement doubleclickMe= driver.findElement(By.xpath("//div[@id='double-click']"));
