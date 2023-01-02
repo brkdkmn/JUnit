@@ -24,7 +24,7 @@ public class N1 extends TestBase {
         String actualTitle= driver.getTitle();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
 
-            // Sag ust kisimdan dil ve para birimi secenegini Français (Belgium) ve TL olarak secin
+            // Sag ust kisimdan dil ve para birimi secenegini Français (Belgium) ve EUR olarak secin
         WebElement dilsecimi=driver.findElement(By.xpath("//div[text()='TRY']"));
         Actions actions=new Actions(driver);
         actions.moveToElement(dilsecimi).click(dilsecimi).perform();
