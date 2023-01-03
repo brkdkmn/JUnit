@@ -25,7 +25,7 @@ public class ReusableMethods {
         // 1- TakeScreenshot objesi olustur
         TakesScreenshot tss= (TakesScreenshot) driver;
         // 2- resmi son olarak kaydedecegimiz dosyayi olustur
-        // her resim cektiginde ust ustre kaydetmemesi icin
+        // her resim cektiginde ust uste kaydetmemesi icin
         // resim dosya yoluna tarih ve saat iceren bir ek yapalim
         LocalDateTime ldt= LocalDateTime.now();
         DateTimeFormatter dtf= DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
