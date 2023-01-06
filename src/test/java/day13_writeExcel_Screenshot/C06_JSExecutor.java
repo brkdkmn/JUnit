@@ -1,10 +1,16 @@
 package day13_writeExcel_Screenshot;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import utilies.ReusableMethods;
 import utilies.TestBase;
+
+import java.util.List;
 
 public class C06_JSExecutor extends TestBase {
 
@@ -24,4 +30,7 @@ public class C06_JSExecutor extends TestBase {
 
         jse.executeScript("alert('Bu is bu kadar')");
     }
+
+
+
 }
